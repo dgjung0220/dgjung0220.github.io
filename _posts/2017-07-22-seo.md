@@ -1,0 +1,90 @@
+---
+tags: ["블로그 만들기"]
+title: "jekyll에서의 SEO 적용, blockquote,toc 디자인 적용"
+date: 2017.07.22
+category: 'web'
+---
+
+* TOC
+{:toc}
+
+## SEO 적용  
+
+페이지를 만든다고 해서 무작정
+웹페이지를 만들면서 seo적용은 필수 불가결 하다고 볼수 있다.  
+search engine optimization, 뜻 그대로 검색 엔진 최적화 작업이다.  
+
+html 마크업에서의 헤더에 정해진 태그를 읽고 그 페이지의 속성, 성격, 정보를 얻고 그를 토대로 검색시 결과에 반영해 주기 때문에 필수 불가결 하다고 한것이다.  
+그 외적으로도 twitter, facebook 등에서 자체적으로
+
+jekyll를 이용한 정적블로그가 많이 늘어난 만큼 jekyll seo 모듈이 있다.
+이를 활용해서 쉽게 적용할수 있다.
+
+### 사용방법  
+
+#### Gemfile  
+
+```javascript
+...
+gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'
+```
+
+> bundle install
+
+#### config.yml  
+
+```yaml
+gems:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+```
+
+#### default.html  
+
+{% raw %}
+```html
+<head>
+...
+{% seo %}
+...
+</head>
+```
+{% endraw %}
+
+이렇게 적용을 한 뒤 소스를 보게 되면
+
+**title, og:title, og:locale, description,** ....등등의 여럿 seo에 도움되는 태그들을 작성한 게시물을 기준으로 생성된 것을 볼수 있습니다.
+
+
+#### sitemap
+
+또한 jekyll-sitemap을 설치 하였다면, sitemap.xml이 생성된 것을 볼 수 있습니다.
+
+[참고페이지 - sitemap](https://support.google.com/webmasters/answer/183668?hl=ko)  
+[참고페이지 - robots.txt](https://support.google.com/webmasters/answer/6062608?hl=ko)  
+크롤러는 먼저 robots.txt에 접근을 하게 되고 robots.txt를 해독하여 사이트에서의 접근과 비접근 부분을 구분하여 활동하게 됩니다.
+**이는 강제적인게 아니기 때문에 크롤러가 무시할 수 있습니다. 떄문에 신뢰되는 검색엔진에서는 검색의 결과를 숨길수 있는 효과를 가져올 수 있지만 페이지를 숨기기 위한 목적으로 사용하기에는 부적절 할 수 있습니다.**
+
+sitemap.xml의 역활은 google이 사이트를 크롤링 할 경우, 해당 크롤러가 사이트의 크롤링할 페이지를 가이드 해주는 것이라고 이해하면 됩니다.
+크롤러는 sitemap파일을 보고 각각 페이지에 들어가여 색인작업을 하게 됩니다.  
+참고 페이지에서 가이드를 해주는 내용입니다만,  모듈을 이용하게 되면, sitemap.xml의 생성과 더불어 robots.txt를 아래와 같이 작성해줍니다.
+```text
+Sitemap: ...host.../sitemap.xml
+```
+
+이로서 jekyll기반의 블로그가 검색엔진에 노출될 수 있습니다.
+
+sitemap.xml등록에 대해서는 [구글 웹마스터 도구](https://www.google.com/webmasters/tools/home?hl=ko)를 이용해서 수동으로 할 수도 있습니다.
+
+
+## blockquote,toc 디자인 적용  
+
+### 사용방법
+
+```markdown
+* TOC
+{:toc}
+
+> blockquote
+```
