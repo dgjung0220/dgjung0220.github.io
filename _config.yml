@@ -8,12 +8,6 @@ title: NexT
 subtitle:
 description:
 author: John Doe
-=======
-title: Seoulite
-subtitle: "dg.jung's blog"
-description: 'developr'
-signature: 'developr'
-author: dg.jung
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: en
 date_format: '%Y-%m-%d'
@@ -21,8 +15,6 @@ date_format: '%Y-%m-%d'
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
 url:
-=======
-url: 'https://dgjung0220.github.io/'
 baseurl:
 permalink: pretty
 
@@ -388,12 +380,8 @@ han: false
 
 # Disqus
 disqus:
-<<<<<<< HEAD
   enable: false
   shortname:
-=======
-  enable: true
-  shortname: dg.jung
   count: true
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
@@ -474,11 +462,7 @@ gitalk:
 #google_site_verification:
 
 # Google Analytics
-<<<<<<< HEAD
 #google_analytics:
-=======
-#google_analytics: UA-98367304-1
->>>>>>> 6d69bacf34715dca6519ce676615b45e613f10ed
 
 # Yandex Webmaster tools verification setting
 # See: https://webmaster.yandex.ru/
