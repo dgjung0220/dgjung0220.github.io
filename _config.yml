@@ -15,18 +15,15 @@ subtitle: "dg.jung's blog"
 description: 'developr'
 signature: 'developr'
 author: dg.jung
->>>>>>> 6d69bacf34715dca6519ce676615b45e613f10ed
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: en
 date_format: '%Y-%m-%d'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
-<<<<<<< HEAD
 url:
 =======
 url: 'https://dgjung0220.github.io/'
->>>>>>> 6d69bacf34715dca6519ce676615b45e613f10ed
 baseurl:
 permalink: pretty
 
@@ -398,7 +395,6 @@ disqus:
 =======
   enable: true
   shortname: dg.jung
->>>>>>> 6d69bacf34715dca6519ce676615b45e613f10ed
   count: true
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
