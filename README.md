@@ -1,4 +1,4 @@
-ignocide's blog
+dg.jung's blog
 
 ### run  
 
