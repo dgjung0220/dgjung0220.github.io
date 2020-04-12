@@ -15,7 +15,7 @@ date_format: '%Y-%m-%d'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
-url: 'https://ignocide.github.io/'
+url: 'https://dgjung0220.github.io/'
 baseurl:
 permalink: pretty
 
@@ -381,7 +381,7 @@ han: false
 # Disqus
 disqus:
   enable: true
-  shortname: ignocide
+  shortname: donggoojung
   count: true
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
@@ -427,7 +427,7 @@ changyan:
 #google_site_verification:
 
 # Google Analytics
-google_analytics: UA-98367304-1
+#google_analytics: UA-98367304-1
 
 # Yandex Webmaster tools verification setting
 # See: https://webmaster.yandex.ru/

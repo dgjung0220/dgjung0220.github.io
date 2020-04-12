@@ -7,7 +7,7 @@
 {% assign html_class = 'theme-next ' | append: site.scheme %}
 {% if site.use_motion %}
   {% assign html_class = html_class | append: ' use-motion' %}
-{% endif %}
+{% endif %} 
 
 <html class="{{ html_class | downcase }}" lang="{{ site.language }}">
 <head>
@@ -30,7 +30,7 @@
       <div class="header-inner"> {% include _partials/header.html %} </div>
     </header>
 
-    <main id="main" class="main">
+	<main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
           <div id="content" class="content">
