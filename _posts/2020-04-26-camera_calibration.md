@@ -29,7 +29,7 @@ category: '영상처리'
 
 > (X,Y,Z) : 월드 좌표계 (World  coordinate system) 상의 3D 좌표
 
-> [R||t] : 월드 좌표계를 카메라 좌표계로 변환시키기 위한 회전/이동 변환 행렬 (extrinsic parameter)
+> [R&#124;t] : 월드 좌표계를 카메라 좌표계로 변환시키기 위한 회전/이동 변환 행렬 (extrinsic parameter)
 
 > A : intrinsic camera matrix (카메라 내부 파라미터)
 
