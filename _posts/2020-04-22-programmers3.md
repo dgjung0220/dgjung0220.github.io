@@ -2,7 +2,7 @@
 tags: ["프로그래머스 코딩테스트 고득점 Kit"]
 title: '[프로그래머스] 스택 문제 연습_1 (중급) '
 date: 2020.04.22
-category: 'programmers'
+category: '코딩테스트'
 ---
 
 
