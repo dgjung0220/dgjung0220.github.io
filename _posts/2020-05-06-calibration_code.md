@@ -1,5 +1,5 @@
 ---
-tags: ["","영상처리"]
+tags: ["캘리브레이션","영상처리"]
 title: '[Computer Vision] Calibration.py 소스코드 살펴보기'
 date: 2020.05.06
 category: '영상처리'
