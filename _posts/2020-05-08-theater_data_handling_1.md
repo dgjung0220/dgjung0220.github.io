@@ -66,7 +66,7 @@ df.sort_values(by='총 좌석수', ascending=False).dropna(axis=0).head()
 df.sort_values(by=['총 스크린 수','총 좌석수'], ascending=False).dropna(axis=0).head()
 ```
 
-![image-20200508155656492](../upload/image-20200508155656492.png)
+![image-20200508155656492](/upload/image-20200508155656492.png)
 
 
 
@@ -79,7 +79,7 @@ df['개관일'] = pd.to_datetime(df['개관일'], errors='coerce')
 df.sort_values(by='개관일').head(10)
 ```
 
-![image-20200508155712740](../upload/image-20200508155712740.png)
+![image-20200508155712740](/upload/image-20200508155712740.png)
 
 
 
@@ -92,7 +92,7 @@ temp_series = pd.Series(df['영화관명'])
 df[temp_series.str.contains('롯데')].sort_values(by='개관일').head(5)
 ```
 
-![image-20200508155749266](../upload/image-20200508155749266.png)
+![image-20200508155749266](/upload/image-20200508155749266.png)
 
 
 
@@ -165,7 +165,7 @@ print(grouped.size().sort_values(ascending=False))
 grouped.size().sort_values().plot(kind='bar')
 ```
 
-![image-20200508160511782](../upload/image-20200508160511782.png)
+![image-20200508160511782](/upload/image-20200508160511782.png)
 
 
 
@@ -175,7 +175,7 @@ grouped.size().sort_values().plot(kind='bar')
 grouped.sum().sort_values(by=['총 좌석수'], ascending=False).head()
 ```
 
-![image-20200508160632806](../upload/image-20200508160632806.png)
+![image-20200508160632806](/upload/image-20200508160632806.png)
 
 
 
@@ -194,7 +194,7 @@ lotte_count = pd.merge(grouped_lotte_by_size, grouped_lotte.sum(), left_index=Tr
 lotte_count.sort_values(by='총 좌석수', ascending=False)
 ```
 
-![image-20200508160738783](../upload/image-20200508160738783.png)
+![image-20200508160738783](/upload/image-20200508160738783.png)
 
 
 
@@ -213,7 +213,7 @@ cgv_count = pd.merge(grouped_cgv_by_size, grouped_cgv.sum(), left_index=True, ri
 cgv_count.sort_values(by='총 좌석수', ascending=False)
 ```
 
-![image-20200508160855888](../upload/image-20200508160855888.png)
+![image-20200508160855888](/upload/image-20200508160855888.png)
 
 
 
@@ -232,7 +232,7 @@ mb_count = pd.merge(grouped_mb_by_size, grouped_mb.sum(), left_index=True, right
 mb_count.sort_values(by='총 좌석수', ascending=False)
 ```
 
-![image-20200508161023859](../upload/image-20200508161023859.png)
+![image-20200508161023859](/upload/image-20200508161023859.png)
 
 ##### 9. 연도별 비교
 
@@ -245,7 +245,7 @@ grouped_year = df_sort_by_year.groupby(df['개관일'])
 grouped_year.size().plot()
 ```
 
-![image-20200508212640628](../upload/image-20200508212640628.png)
+![image-20200508212640628](/upload/image-20200508212640628.png)
 
 
 
