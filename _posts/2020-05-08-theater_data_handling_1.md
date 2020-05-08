@@ -56,7 +56,7 @@ df.sort_values(by='총 스크린 수', ascending=False).dropna(axis=0).head()
 df.sort_values(by='총 좌석수', ascending=False).dropna(axis=0).head()
 ```
 
-![image-20200508155631935](../../../Users/dgjun/Desktop/memos/upload/image-20200508155631935.png)
+![image-20200508155631935](../upload/image-20200508155631935.png)
 
 
 
