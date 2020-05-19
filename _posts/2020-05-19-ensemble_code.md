@@ -1,6 +1,6 @@
 ---
 tags: ["파이썬","sklearn","앙상블"]
-title: '앙상블 '
+title: '앙상블 적용해보기'
 date: 2020.05.19
 category: '데이터분석'
 ---
